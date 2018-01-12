@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-
-    <logo></logo>
     <h1>{{ msg }}</h1>
-
   </div>
 </template>
 
@@ -17,19 +14,29 @@ export default {
 
   data () {
     return {
-      msg: 'Hello Sandusky! 🇺🇸'
+      msg: 'Hello CodeMash! 🇺🇸'
+    }
+  },
+
+  methods: {
+    alert () {
+      alert('Logo Click! 👏')
     }
   }
 }
 </script>
 
 <style>
+body {
+  background: #0c84a9;
+  color: #fff;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 
